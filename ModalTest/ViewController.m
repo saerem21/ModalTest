@@ -19,17 +19,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    TextData *data = [TextData sharedTextData];
-    if(data.nameData != nil){
-        NSLog(@"is nil");
-        self.nameLable.text = data.nameData;
-        }
-    else NSLog(@"is not nil");
-	// Do any additional setup after loading the view, typically from a nib.
+    	// Do any additional setup after loading the view, typically from a nib.
 }
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+    TextData *data = [TextData sharedTextData];
+    if(data.nameData != nil){
+        NSLog(@"is not nil");
+        self.nameLable.text = data.nameData;
+    }
+    else NSLog(@"is nil");
+
 }
 
 - (void)didReceiveMemoryWarning
