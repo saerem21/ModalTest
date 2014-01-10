@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "TextData.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *nameLable;
 
 @end
 
@@ -17,7 +19,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    TextData *data = [TextData sharedTextData];
+    if(data.nameData != nil){
+        NSLog(@"is nil");
+        self.nameLable.text = data.nameData;
+        }
+    else NSLog(@"is not nil");
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning

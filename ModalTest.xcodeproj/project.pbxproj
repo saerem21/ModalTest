@@ -21,6 +21,8 @@
 		00BE67B5187FA8C5001537B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BE6797187FA8C5001537B8 /* UIKit.framework */; };
 		00BE67BD187FA8C5001537B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00BE67BB187FA8C5001537B8 /* InfoPlist.strings */; };
 		00BE67BF187FA8C5001537B8 /* ModalTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BE67BE187FA8C5001537B8 /* ModalTestTests.m */; };
+		00BE67CA187FADD6001537B8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BE67C9187FADD6001537B8 /* LoginViewController.m */; };
+		00BE67CD187FAE73001537B8 /* TextData.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BE67CC187FAE73001537B8 /* TextData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		00BE67BA187FA8C5001537B8 /* ModalTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ModalTestTests-Info.plist"; sourceTree = "<group>"; };
 		00BE67BC187FA8C5001537B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		00BE67BE187FA8C5001537B8 /* ModalTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalTestTests.m; sourceTree = "<group>"; };
+		00BE67C8187FADD6001537B8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
+		00BE67C9187FADD6001537B8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
+		00BE67CB187FAE73001537B8 /* TextData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextData.h; sourceTree = "<group>"; };
+		00BE67CC187FAE73001537B8 /* TextData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +121,14 @@
 				00BE67A2187FA8C5001537B8 /* AppDelegate.h */,
 				00BE67A3187FA8C5001537B8 /* AppDelegate.m */,
 				00BE67A5187FA8C5001537B8 /* Main.storyboard */,
+				00BE67C8187FADD6001537B8 /* LoginViewController.h */,
+				00BE67C9187FADD6001537B8 /* LoginViewController.m */,
 				00BE67A8187FA8C5001537B8 /* ViewController.h */,
 				00BE67A9187FA8C5001537B8 /* ViewController.m */,
 				00BE67AB187FA8C5001537B8 /* Images.xcassets */,
 				00BE679A187FA8C5001537B8 /* Supporting Files */,
+				00BE67CB187FAE73001537B8 /* TextData.h */,
+				00BE67CC187FAE73001537B8 /* TextData.m */,
 			);
 			path = ModalTest;
 			sourceTree = "<group>";
@@ -249,6 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00BE67CA187FADD6001537B8 /* LoginViewController.m in Sources */,
+				00BE67CD187FAE73001537B8 /* TextData.m in Sources */,
 				00BE67AA187FA8C5001537B8 /* ViewController.m in Sources */,
 				00BE67A4187FA8C5001537B8 /* AppDelegate.m in Sources */,
 				00BE67A0187FA8C5001537B8 /* main.m in Sources */,
